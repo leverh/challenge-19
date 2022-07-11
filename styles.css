@@ -1,0 +1,372 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-color: #f9f4e8;
+    width: 100vw;
+    height: 100vh;
+}
+
+.desktop-container {
+    display: none;
+}
+
+nav {
+    margin: 1.5rem 2rem 1.5rem 2rem;
+}
+
+.mobile-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-btn {
+    margin-left: 1rem;
+    font-family: 'Lato', sans-serif;
+    font-size: 0.8rem;
+    font-weight: 600;
+    padding: 0.6rem 0.9rem;
+    border-radius: 25px;
+    color: white;
+    border: none;
+    background-image: linear-gradient(to right, #eaad54, #ea5673);
+    max-height: 2.5rem;
+    text-align: center;
+}
+
+.ham-img {
+   margin-left: 10rem;
+   font-size: 3rem;
+}
+
+.image-container {
+    display: grid;
+    width: 88%;
+    max-width: 375px;
+    grid-template-columns: 1fr;
+    margin: 7rem 2rem 7rem 5.5rem;
+}
+
+.blue {
+    grid-column: 1;
+    max-width: 30rem;
+    transform: rotate(-36deg);
+}
+
+.pink {
+    grid-column: 1;
+    max-width: 30rem; 
+    transform: rotate(-24deg);
+}
+
+.purple {
+    grid-column: 1;
+    max-width: 30rem;
+    transform: rotate(-12deg);
+}
+
+.model-img {
+    grid-column: 1;
+    max-width: 30rem;
+    z-index: 10;
+}
+
+.blue, .pink, .purple, .model-img {
+    grid-row: 1 / 2;
+}
+
+.text-container {
+    margin: 1.5rem 2rem 1.5rem 2rem;
+}
+
+h1 {
+    font-size: 4.5rem;
+    font-family: 'Playfair Display', serif;
+}
+
+.main-text {
+    font-size: 1.6rem;
+    font-family: 'Lato', sans-serif;
+    color: #525252;
+    line-height: 2.5rem;
+    margin-bottom: 1.5rem;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 1rem;
+}
+
+form input {
+    border: none;
+    padding: 1.5rem;
+    color: #525252;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    border-radius: 8px;
+}
+
+.sub-btn {
+    border: none;
+    padding: 1.5rem;
+    background-color: #4977ea;
+    color: #ffffff;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    font-weight: 600;
+    border-radius: 8px;
+    margin-bottom: 1.5rem;
+}
+
+.btm-text {
+    display: flex;
+    align-items: center;
+    
+}
+
+.btm-text p {
+    font-size: 1.5rem;
+    color: #525252;
+    margin-left: 2rem;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+}
+
+footer {
+    margin: 4rem 2rem 1.5rem 2rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.social-li {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+
+.social-li li {
+    text-decoration: none;
+    list-style: none;
+    font-size: 1.8rem;
+}
+
+.social-li a {
+    text-decoration: none;
+    color: #525252;
+    font-family: 'Lato', sans-serif;
+}
+
+.cta-contact {
+    margin-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    align-items: center;
+}
+
+h2 {
+    font-size: 1.8rem;
+    font-family: 'Playfair Display', serif;
+    color: #525252;
+    font-weight: 500;
+}
+
+.cta-help p {
+    font-size: 1.8rem;
+    font-family: 'Lato', sans-serif;
+}
+
+.cta-help a {
+    text-decoration: none;
+    color: black;
+    font-weight: 600;
+}
+
+.attribution {
+    margin-top: 4rem;
+    margin-bottom: 2rem;
+    margin: 4rem 1.5rem;
+    font-size: 1.5rem;
+    font-family: 'Lato', sans-serif;
+    text-align: center;
+}
+
+@media screen and (min-width: 410px) {
+    .ham-img {
+        margin-left: 15rem;
+    }
+}
+
+@media screen and (min-width: 500px) {
+    .ham-img {
+        margin-left: 50%;
+    }
+
+    .image-container {
+        margin-left: 25%;
+        margin-bottom: 0;
+    }
+    
+    form {
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 1.5rem;
+    }
+
+    .sub-btn {
+        margin-bottom: 0;
+    }
+
+    .btm-text {
+        justify-content: flex-start; 
+        margin-left: 1rem;   
+    }
+
+    .btm-text p {
+        font-size: 1.3rem;
+    }
+
+    footer {
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        margin: 0rem 2rem 1rem 2rem;
+    }
+
+    .social {
+        margin-top: 1rem;
+    }
+
+    .social-li a {
+        font-size: 1.3rem;
+    }
+
+    .cta-contact {
+        margin-top: 1rem;
+    }
+
+}
+
+@media screen and (min-width: 700px) {
+    .ham-img {
+        margin-left: 70%;
+    }
+
+}
+
+@media screen and (min-width: 1000px) {
+    .mobile-container {
+        display: none;
+    }
+
+    .desktop-container {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        place-items: center;
+    }
+
+    .logo-container {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+    }
+
+    .logo-container button {
+        font-family: 'Lato', sans-serif;
+        font-size: 0.8rem;
+        font-weight: 600;
+        padding: 0.6rem 0.9rem;
+        border-radius: 25px;
+        color: white;
+        border: none;
+        background-image: linear-gradient(to right, #eaad54, #ea5673);
+        max-height: 2.5rem;
+        text-align: center;
+    }
+
+    .links-container ul { 
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        gap: 1.5rem;
+        list-style: none;
+    }
+
+    .links-container ul a {
+        color: #525252;
+        text-decoration: none;
+        font-size: 1.5rem;
+        font-family: 'Lato', sans-serif;
+    }
+
+    .cta-nav {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .login {
+        background-color: transparent;
+        border: none;
+    }
+
+    .join {
+        border: none;
+        padding: 1.2rem;
+        background-color: #4977ea;
+        color: #ffffff;
+        font-size: 1.5rem;
+        font-family: 'Lato', sans-serif;
+        font-weight: 600;
+        border-radius: 5px;
+    }
+
+    main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        margin-top: 8rem;
+        place-items: center;
+    }
+
+    .image-container {
+        grid-column: 2;
+        grid-row: 1;
+    }
+
+    .text-container {
+        grid-column: 1;
+        grid-row: 1;
+        margin-top: 9rem;
+        margin-left: 6rem;
+    }
+
+    form {
+        margin-left: -1rem; 
+    }
+
+    .btm-text {
+        margin-left: 0;
+    }
+
+    footer {
+        margin-top: 6rem;
+        margin-left: 6rem;
+        margin-right: 10rem;
+        margin-bottom: 6rem;
+    }
+}
